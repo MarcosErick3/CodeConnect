@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <aside> <img src="img/Logo.svg" alt="logo da CodeConnect">
+    <aside>
+        <img src="./img/Logo.svg" alt="logo do codeconnect">
         <nav>
             <ul class="lista-links">
                 <li>
@@ -22,29 +23,28 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/feed.svg" alt="">
+                        <img src="./img/feed.svg">
                         Feed
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/account_circle.svg" alt="">
+                        <img src="./img/account_circle.svg">
                         Perfil
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/info.svg" alt="">
+                        <img src="./img/info.svg">
                         Sobre nós
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/close-black.svg" alt="">
+                        <img src="./img/logout.svg">
                         Sair
                     </a>
                 </li>
-
             </ul>
         </nav>
     </aside>
@@ -52,35 +52,32 @@
     <main>
         <div class="container-upload-imagem">
             <div class="container-imagem">
-                <img src="img/imagem1.png" class="main-imagem" alt="">
+                <img src="./img/imagem1.png" alt="" class="main-imagem">
             </div>
             <button id="upload-btn">Carregar imagem</button>
-            <input type="file" id="image-upload" accept="image/" style="display: none;">
+            <input type="file" id="image-upload" accept="image/" style="display: none" />
             <div class="container-imagem-nome">
-                <p>image_png</p>
-                <img src="img/close.svg" alt="">
+                <p>image_projeto.png</p>
+                <img src="./img/close.svg">
             </div>
         </div>
-        <div class="container-descrição">
+        <div class="container-descricao">
             <h2>Novo projeto</h2>
-            <form action="">
+            <form>
                 <div>
                     <label for="nome">Nome do projeto</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" />
                 </div>
                 <div>
-                    <label for="descrição">Descrição</label>
-                    <textarea name="descrição" id="descrição"></textarea>
+                    <label for="descricao">Descricao</label>
+                    <textarea id="descricao" name="descricao"></textarea>
                 </div>
                 <div>
                     <label for="categoria">Tags</label>
-                    <input type="text" id="categoria" name="categoria">
+                    <input type="text" name="categoria" id="input-tags" />
                 </div>
-                <ul class="lista-tags">
-                    <li>
-                        <p>Front-end</p>
-                        <img src="img/close-black.svg" alt="">
-                    </li>
+                <ul class="lista-tags" id="lista-tags">
+
                 </ul>
                 <div class="container-botoes">
                     <button class="botao-descartar">Descartar</button>
